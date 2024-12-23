@@ -111215,7 +111215,7 @@ function Oyt() {
     { address: s, chainId: o, isConnected: a } = cu(),
     l = () => {
       window.open(
-        "https://app.uniswap.org/explore/tokens/ethereum/0x292fcdd1b104de5a00250febba9bc6a5092a0076",
+        "https://app.uniswap.org/explore/tokens/ethereum/0xc3e11F390E86D9877EeA792EbEBe406b52a01bfe",
         "_blank"
       );
     };
