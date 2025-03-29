@@ -77790,12 +77790,12 @@ function _z(t, ...e) {
 }
 function fit(t) {
   if (typeof t != "function" || typeof t.create != "function")
-    throw new Error("Hash should be wrapped by utils.wrapConstructor");
+    throw new Error("Hex should be wrapped by utils.wrapConstructor");
   WI(t.outputLen), WI(t.blockLen);
 }
 function yx(t, e = !0) {
-  if (t.destroyed) throw new Error("Hash instance has been destroyed");
-  if (e && t.finished) throw new Error("Hash#digest() has already been called");
+  if (t.destroyed) throw new Error("Hex instance has been destroyed");
+  if (e && t.finished) throw new Error("Hex#digest() has already been called");
 }
 function rpe(t, e) {
   _z(t);
@@ -77863,7 +77863,7 @@ let ope = class extends Ez {
     super(), (this.finished = !1), (this.destroyed = !1), fit(e);
     const r = y9(n);
     if (((this.iHash = e.create()), typeof this.iHash.update != "function"))
-      throw new Error("Expected instance of class which extends utils.Hash");
+      throw new Error("Expected instance of class which extends utils.Hex");
     (this.blockLen = this.iHash.blockLen),
       (this.outputLen = this.iHash.outputLen);
     const i = this.blockLen,
@@ -110943,11 +110943,11 @@ function cu() {
   return { address: t, isConnected: e, chainId: n };
 }
 const fn = {
-  primary100: "#950BFF",
+  primary100: "#aaaaaa",
   primary200: "#c54cff",
   primary300: "#cf67ff",
   primary400: "#d87eff",
-  primary500: "#e095ff",
+  primary500: "#cccccc",
   primary600: "#e8aaff",
   surface100: "#050505",
   surface200: "#202020",
@@ -111086,11 +111086,11 @@ function $W() {
               },
               lineHeight: "23px",
               background:
-                "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)",
+                "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)",
               color: "#1F1F1F",
               "&:hover": {
                 background:
-                  "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 80%)",
+                  "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 80%)",
               },
             },
             children: "Connect Wallet",
@@ -111107,6 +111107,7 @@ var m1e = (NW.default = void 0),
 m1e = NW.default = (0, Iyt.default)(
   (0, Tyt.jsx)("path", {
     d: "M9 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2m6 0h4c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2m6-13V5c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2",
+    fill: "#cccccc"
   }),
   "SpaceDashboardRounded"
 );
@@ -111122,14 +111123,14 @@ function kyt() {
       children: [
         S.jsx("path", {
           d: "M12 1H36C42.0751 1 47 5.92487 47 12V36C47 42.0751 42.0751 47 36 47H12C5.92487 47 1 42.0751 1 36V12C1 5.92487 5.92487 1 12 1Z",
-          stroke: "#752E99",
+          stroke: "#cccccc",
           strokeWidth: "2",
         }),
         S.jsx("path", {
           fillRule: "evenodd",
           clipRule: "evenodd",
           d: "M30.4238 33.528L33.9876 15.7142C34.0794 15.2548 33.645 14.8716 33.224 15.0408L13.3653 23.0018C12.8752 23.198 12.8794 23.9191 13.3709 24.1105L18.2098 25.9871L20.0827 32.2465C20.2026 32.6471 20.6743 32.7953 20.9873 32.5293L23.6846 30.2445C23.9673 30.0049 24.3701 29.9931 24.6654 30.2159L29.5304 33.8863C29.8652 34.1392 30.3398 33.9486 30.4238 33.528ZM29.2378 18.9356L19.781 24.9882C19.4185 25.2206 19.2479 25.6755 19.3648 26.1013L20.3873 29.8348C20.46 30.0993 20.8294 30.0722 20.8648 29.7989L21.1305 27.7516C21.1807 27.3661 21.3576 27.0108 21.632 26.7455L29.4365 19.2066C29.5826 19.0659 29.4077 18.8271 29.2378 18.9356Z",
-          fill: "#752E99",
+          fill: "#cccccc",
         }),
       ],
     }),
@@ -111147,13 +111148,13 @@ function Pyt() {
       children: [
         S.jsx("path", {
           d: "M12 1H36C42.0751 1 47 5.92487 47 12V36C47 42.0751 42.0751 47 36 47H12C5.92487 47 1 42.0751 1 36V12C1 5.92487 5.92487 1 12 1Z",
-          stroke: "#752E99",
+          stroke: "#cccccc",
           strokeWidth: "2",
         }),
         S.jsx("path", {
           d: "M25.7191 22.6214L32.4222 15H30.8331L25.0112 21.6174L20.3596 15H15L22.0209 25.011L15 33H16.5891L22.7287 26.0149L27.6404 33H33L25.7191 22.6214ZM23.5377 25.11L22.8299 24.106L17.1525 16.1736H19.5939L24.1734 22.5789L24.8812 23.5829L30.8186 31.8971H28.3772L23.5377 25.11Z",
-          fill: "#752E99",
-          stroke: "#752E99",
+          fill: "#cccccc",
+          stroke: "#cccccc",
         }),
       ],
     }),
@@ -111215,7 +111216,7 @@ function Oyt() {
     { address: s, chainId: o, isConnected: a } = cu(),
     l = () => {
       window.open(
-        "https://app.uniswap.org/explore/tokens/ethereum/0xc3e11F390E86D9877EeA792EbEBe406b52a01bfe",
+        "https://pancakeswap.org/swap?outputCurrency=0xcomingsoontoken",
         "_blank"
       );
     };
@@ -111236,11 +111237,11 @@ function Oyt() {
         fontSize: { xs: "8px", sm: "8px", md: "12px", lg: "12px", xl: "12px" },
         lineHeight: "23px",
         background:
-          "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)",
+          "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)",
         color: "#1F1F1F",
         "&:hover": {
           background:
-            "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 80%)",
+            "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 80%)",
         },
       },
       children: "Buy $HEXAI",
@@ -111256,6 +111257,7 @@ var y1e = (DW.default = void 0),
 y1e = DW.default = (0, Nyt.default)(
   (0, Myt.jsx)("path", {
     d: "m20.38 8.57-1.23 1.85a8 8 0 0 1-.22 7.58H5.07A8 8 0 0 1 15.58 6.85l1.85-1.23A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1 10 10 0 0 0-.27-10.44zm-9.79 6.84a2 2 0 0 0 2.83 0l5.66-8.49-8.49 5.66a2 2 0 0 0 0 2.83",
+    fill: "#cccccc"
   }),
   "Speed"
 );
@@ -111268,6 +111270,7 @@ var v1e = (LW.default = void 0),
 v1e = LW.default = (0, Lyt.default)(
   (0, Byt.jsx)("path", {
     d: "M3 13h8V3H3zm0 8h8v-6H3zm10 0h8V11h-8zm0-18v6h8V3z",
+    fill: "#cccccc",
   }),
   "Dashboard"
 );
@@ -111280,6 +111283,7 @@ var w1e = (BW.default = void 0),
 w1e = BW.default = (0, jyt.default)(
   (0, Uyt.jsx)("path", {
     d: "M9.19 6.35c-2.04 2.29-3.44 5.58-3.57 5.89L2 10.69l4.05-4.05c.47-.47 1.15-.68 1.81-.55zM11.17 17s3.74-1.55 5.89-3.7c5.4-5.4 4.5-9.62 4.21-10.57-.95-.3-5.17-1.19-10.57 4.21C8.55 9.09 7 12.83 7 12.83zm6.48-2.19c-2.29 2.04-5.58 3.44-5.89 3.57L13.31 22l4.05-4.05c.47-.47.68-1.15.55-1.81zM9 18c0 .83-.34 1.58-.88 2.12C6.94 21.3 2 22 2 22s.7-4.94 1.88-6.12C4.42 15.34 5.17 15 6 15c1.66 0 3 1.34 3 3m4-9c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2",
+    fill: "#cccccc",
   }),
   "RocketLaunch"
 );
@@ -111292,6 +111296,7 @@ var b1e = (FW.default = void 0),
 b1e = FW.default = (0, zyt.default)(
   (0, Wyt.jsx)("path", {
     d: "M22 11V3h-7v3H9V3H2v8h7V8h2v10h4v3h7v-8h-7v3h-2V8h2v3zM7 9H4V5h3zm10 6h3v4h-3zm0-10h3v4h-3z",
+    fill: "#cccccc",
   }),
   "AccountTreeOutlined"
 );
@@ -111304,6 +111309,7 @@ var x1e = (jW.default = void 0),
 x1e = jW.default = (0, Gyt.default)(
   (0, qyt.jsx)("path", {
     d: "M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 10c2.7 0 5.8 1.29 6 2H6c.23-.72 3.31-2 6-2m0-12C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4m0 10c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4",
+    fill: "#cccccc",
   }),
   "PersonOutlined"
 );
@@ -122099,7 +122105,7 @@ function C5t() {
             color: "#fff",
           },
           children:
-            "Welcome to Hash AI mining rig feed. This details all of the live statistics for our GPU mining farm, including current hashrates and average returns for all mining activities.",
+            "Welcome to Hex AI mining rig feed. This details all of the live statistics for our GPU mining farm, including current hashrates and average returns for all mining activities.",
         }),
         S.jsx(Le, {
           children:
@@ -124552,7 +124558,7 @@ class V4t extends mn {
     super(`The connected Ethereum Node did not respond within ${
       e.numberOfSeconds
     } seconds, please make sure your transaction was properly sent and you are connected to a healthy Node. Be aware that transaction might still be pending or mined!
-	Transaction Hash: ${
+	Transaction Hex: ${
     e.transactionHash ? e.transactionHash.toString() : "not available"
   }`),
       (this.code = uEt);
@@ -124560,7 +124566,7 @@ class V4t extends mn {
 }
 function ave(t) {
   return `Please make sure your transaction was properly sent and there are no previous pending transaction for the same account. However, be aware that it might still be mined!
-	Transaction Hash: ${t ? t.toString() : "not available"}`;
+	Transaction Hex: ${t ? t.toString() : "not available"}`;
 }
 class lve extends mn {
   constructor(e) {
@@ -125070,12 +125076,12 @@ function V7(t, ...e) {
 }
 function MV(t) {
   if (typeof t != "function" || typeof t.create != "function")
-    throw new Error("Hash should be wrapped by utils.wrapConstructor");
+    throw new Error("Hex should be wrapped by utils.wrapConstructor");
   Ua(t.outputLen), Ua(t.blockLen);
 }
 function Gy(t, e = !0) {
-  if (t.destroyed) throw new Error("Hash instance has been destroyed");
-  if (e && t.finished) throw new Error("Hash#digest() has already been called");
+  if (t.destroyed) throw new Error("Hex instance has been destroyed");
+  if (e && t.finished) throw new Error("Hex#digest() has already been called");
 }
 function DV(t, e) {
   V7(t);
@@ -129137,7 +129143,7 @@ class owe extends LV {
     super(), (this.finished = !1), (this.destroyed = !1), MV(e);
     const r = Ux(n);
     if (((this.iHash = e.create()), typeof this.iHash.update != "function"))
-      throw new Error("Expected instance of class which extends utils.Hash");
+      throw new Error("Expected instance of class which extends utils.Hex");
     (this.blockLen = this.iHash.blockLen),
       (this.outputLen = this.iHash.outputLen);
     const i = this.blockLen,
@@ -141144,8 +141150,8 @@ function dTt() {
                   sm: 12,
                   md: 12,
                   children: S.jsx(uTt, {
-                    text: "Hash Left To Withdraw",
-                    value: l.toFixed(0).toString() + " HASH",
+                    text: "Hex Left To Withdraw",
+                    value: l.toFixed(0).toString() + " HEX",
                   }),
                 },
                 1
@@ -141279,7 +141285,7 @@ function hTt({ title: t, content: e }) {
         fontWeight: "600",
         fontSize: "32px",
         lineHeight: "140%",
-        color: "#950BFF",
+        color: "#aaaaaa",
         children: e,
       }),
     ],
@@ -141290,7 +141296,7 @@ function pi({
   titlColor: e = "#A0AEC0",
   titleFontSize: n = "16px",
   content: r,
-  contentColor: i = "#950BFF",
+  contentColor: i = "#aaaaaa",
   contentFontSize: s = "16px",
 }) {
   return S.jsxs(_e, {
@@ -141381,7 +141387,7 @@ function yTt() {
           width: "100%",
           height: "100%",
           background:
-            "radial-gradient(73.1% 73.1% at 2.51% 3.15%, #DB4CFF 0%, rgba(219, 76, 255, 0) 100%)",
+            "radial-gradient(73.1% 73.1% at 2.51% 3.15%, #bbbbbb 0%, rgba(219, 76, 255, 0) 100%)",
           opacity: 0.5,
           transform: "rotate(-180deg)",
           borderRadius: "16px",
@@ -141481,7 +141487,7 @@ function wTt({
           children: [
             S.jsx(zOe, {
               children:
-                "Enter the amount of HASH tokens that you'd like to deposit.",
+                "Enter the amount of HEX tokens that you'd like to deposit.",
             }),
             S.jsxs(Le, {
               container: !0,
@@ -141853,7 +141859,7 @@ function bTt() {
             fontWeight: "500",
             fontSize: "32px",
             lineHeight: "140%",
-            color: "#950BFF",
+            color: "#aaaaaa",
             textAlign: "right",
             children: A.toFixed(4) + " ETH",
           }),
@@ -141885,7 +141891,7 @@ function bTt() {
               fontWeight: "400",
               fontSize: "14px",
               lineHeight: "140%",
-              color: "#950BFF",
+              color: "#aaaaaa",
               textAlign: "right",
               children: `${
                 o
@@ -141917,7 +141923,7 @@ function bTt() {
               fontWeight: "400",
               fontSize: "14px",
               lineHeight: "140%",
-              color: "#950BFF",
+              color: "#aaaaaa",
               textAlign: "right",
               children: `${
                 u
@@ -141949,7 +141955,7 @@ function bTt() {
               fontWeight: "400",
               fontSize: "14px",
               lineHeight: "140%",
-              color: "#950BFF",
+              color: "#aaaaaa",
               textAlign: "right",
               children: [f, "%"],
             }),
@@ -141973,7 +141979,7 @@ function bTt() {
               fontSize: "10px",
               lineHeight: "12px",
             },
-            children: "Deposit Hash To Pool Share",
+            children: "Deposit Hex To Pool Share",
           })
         : null,
       S.jsxs(_e, {
@@ -142081,7 +142087,7 @@ function bTt() {
         color: "#FFFFFF",
         sx: { opacity: "0.1" },
         mt: 2,
-        children: "Powered By Hash AI",
+        children: "Powered By Hex AI",
       }),
     ],
   });
@@ -142504,7 +142510,7 @@ function STt() {
         fontWeight: "600",
         fontSize: "32px",
         lineHeight: "140%",
-        color: "#950BFF",
+        color: "#aaaaaa",
         children: t.toString(),
       }),
     ],
@@ -142539,7 +142545,7 @@ function ATt() {
         fontWeight: "600",
         fontSize: "32px",
         lineHeight: "140%",
-        color: "#950BFF",
+        color: "#aaaaaa",
         children: "Wait For Next Pool",
       }),
     ],
@@ -142626,7 +142632,7 @@ function ITt() {
         fontWeight: "600",
         fontSize: "32px",
         lineHeight: "140%",
-        color: "#950BFF",
+        color: "#aaaaaa",
         children: t.toString(),
       }),
     ],
@@ -143067,7 +143073,7 @@ function OTt({ viewType: t, setViewType: e }) {
             sx: {
               background:
                 t === "RENTING"
-                  ? "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)"
+                  ? "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)"
                   : "transparent",
               boxShadow: "0px 0px 0px #C059EF",
               fontFamily: "Orbitron",
@@ -143086,7 +143092,7 @@ function OTt({ viewType: t, setViewType: e }) {
             sx: {
               background:
                 t === "MYRENTING"
-                  ? "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)"
+                  ? "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)"
                   : "transparent",
               boxShadow: "0px 0px 0px #C059EF",
               fontFamily: "Orbitron",
@@ -143116,7 +143122,7 @@ function $Tt({ packageType: t, info: e, onPackageSelected: n }) {
     flexDirection: "column",
     sx: {
       background:
-        "linear-gradient(90deg, rgba(174, 0, 255, 0.1122) 0%, rgba(174, 0, 255, 0.17) 36.01%, rgba(89, 7, 153, 0.068) 100%)",
+        "linear-gradient(90deg, rgba(235, 229, 238, 0.11) 0%, rgba(255, 255, 255, 0.37) 36.01%, rgba(89, 7, 153, 0.068) 100%)",
     },
     children: [
       S.jsx(ke, {
@@ -143125,7 +143131,7 @@ function $Tt({ packageType: t, info: e, onPackageSelected: n }) {
         fontWeight: "600",
         fontSize: "20px",
         lineHeight: "25px",
-        color: "#AE00FF",
+        color: "#aaaaaa",
         children: t,
       }),
       S.jsx(ke, {
@@ -143159,11 +143165,11 @@ function $Tt({ packageType: t, info: e, onPackageSelected: n }) {
             },
             lineHeight: "16px",
             background:
-              "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)",
+              "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)",
             color: "#1F1F1F",
             "&:hover": {
               background:
-                "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 80%)",
+                "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 80%)",
             },
           },
           children: "Select",
@@ -143362,7 +143368,7 @@ function jTt({ filteredRig: t, setSelectedRig: e, setActiveStep: n }) {
           mr: 0.5,
           children: [
             S.jsx(D3, {
-              sx: { width: 50, height: 50, color: "#AE00FF" },
+              sx: { width: 50, height: 50, color: "#aaaaaa" },
               fontSize: "large",
             }),
             S.jsx(ke, {
@@ -143405,7 +143411,7 @@ function jTt({ filteredRig: t, setSelectedRig: e, setActiveStep: n }) {
               fontWeight: "500",
               fontSize: "20px",
               lineHeight: "23px",
-              color: "#AE00FF",
+              color: "#aaaaaa",
               mb: 1,
               children: Z4(t.GPU),
             }),
@@ -143439,10 +143445,10 @@ function jTt({ filteredRig: t, setSelectedRig: e, setActiveStep: n }) {
                         fontSize: "13px",
                         lineHeight: "16px",
                         background:
-                          "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)",
+                          "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)",
                         "&:hover": {
                           background:
-                            "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 80%)",
+                            "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 80%)",
                         },
                         color: "#000000",
                         mt: 1,
@@ -143464,10 +143470,10 @@ function jTt({ filteredRig: t, setSelectedRig: e, setActiveStep: n }) {
                         fontSize: "13px",
                         lineHeight: "16px",
                         background:
-                          "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)",
+                          "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)",
                         "&:hover": {
                           background:
-                            "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 80%)",
+                            "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 80%)",
                         },
                         color: "#000000",
                         mt: 1,
@@ -143870,7 +143876,7 @@ function HTt({
           mr: 1,
           children: [
             S.jsx(D3, {
-              sx: { width: 50, height: 50, color: "#AE00FF" },
+              sx: { width: 50, height: 50, color: "#aaaaaa" },
               fontSize: "large",
             }),
             S.jsx(ke, {
@@ -143914,7 +143920,7 @@ function HTt({
               fontWeight: "500",
               fontSize: "20px",
               lineHeight: "23px",
-              color: "#AE00FF",
+              color: "#aaaaaa",
               mb: 1,
               children: Z4(t.GPU),
             }),
@@ -144016,7 +144022,7 @@ function HTt({
                     borderRadius: "16px",
                     height: "52px",
                     background:
-                      "conic-gradient(from 90deg at 94.99% -7.29%, #D297ED 0deg, #9511FF 119.47deg, #D297ED 236.75deg, #9511FF 360deg), linear-gradient(90deg, #D297ED 0%, #9511FF 99.48%, #D297ED 197.13%, #9511FF 299.76%)",
+                      "conic-gradient(from 90deg at 94.99% -7.29%, #bbbbbb 0deg, #999999 119.47deg, #bbbbbb 236.75deg, #999999 360deg), linear-gradient(90deg, #bbbbbb 0%, #999999 99.48%, #bbbbbb 197.13%, #999999 299.76%)",
                     "&:hover": { border: "1px solid #FFFFFF" },
                   },
                   disabled:
@@ -144169,7 +144175,7 @@ function WTt({
           mr: 1,
           children: [
             S.jsx(D3, {
-              sx: { width: 50, height: 50, color: "#AE00FF" },
+              sx: { width: 50, height: 50, color: "#aaaaaa" },
               fontSize: "large",
             }),
             S.jsx(ke, {
@@ -144213,7 +144219,7 @@ function WTt({
               fontWeight: "500",
               fontSize: "20px",
               lineHeight: "23px",
-              color: "#AE00FF",
+              color: "#aaaaaa",
               mb: 1,
               children: Z4(t.GPU),
             }),
@@ -144287,7 +144293,7 @@ function WTt({
                     borderRadius: "16px",
                     height: "52px",
                     background:
-                      "conic-gradient(from 90deg at 94.99% -7.29%, #D297ED 0deg, #9511FF 119.47deg, #D297ED 236.75deg, #9511FF 360deg), linear-gradient(90deg, #D297ED 0%, #9511FF 99.48%, #D297ED 197.13%, #9511FF 299.76%)",
+                      "conic-gradient(from 90deg at 94.99% -7.29%, #bbbbbb 0deg, #999999 119.47deg, #bbbbbb 236.75deg, #999999 360deg), linear-gradient(90deg, #bbbbbb 0%, #999999 99.48%, #bbbbbb 197.13%, #999999 299.76%)",
                     "&:hover": { border: "1px solid #FFFFFF" },
                   },
                   children: "Pay",
@@ -144338,7 +144344,7 @@ function VTt({
           mr: 1,
           children: [
             S.jsx(D3, {
-              sx: { width: 50, height: 50, color: "#AE00FF" },
+              sx: { width: 50, height: 50, color: "#aaaaaa" },
               fontSize: "large",
             }),
             S.jsx(ke, {
@@ -144382,7 +144388,7 @@ function VTt({
               fontWeight: "500",
               fontSize: "20px",
               lineHeight: "23px",
-              color: "#AE00FF",
+              color: "#aaaaaa",
               mb: 1,
               children: t.gpu,
             }),
@@ -144541,7 +144547,7 @@ function VTt({
                     borderRadius: "16px",
                     height: "52px",
                     background:
-                      "conic-gradient(from 90deg at 94.99% -7.29%, #D297ED 0deg, #9511FF 119.47deg, #D297ED 236.75deg, #9511FF 360deg), linear-gradient(90deg, #D297ED 0%, #9511FF 99.48%, #D297ED 197.13%, #9511FF 299.76%)",
+                      "conic-gradient(from 90deg at 94.99% -7.29%, #bbbbbb 0deg, #999999 119.47deg, #bbbbbb 236.75deg, #999999 360deg), linear-gradient(90deg, #bbbbbb 0%, #999999 99.48%, #bbbbbb 197.13%, #999999 299.76%)",
                     "&:hover": { border: "1px solid #FFFFFF" },
                   },
                   children: "Finish",
@@ -144723,7 +144729,7 @@ function qTt({ myRental: t }) {
             alignItems: "center",
             mr: 2,
             children: S.jsx(D3, {
-              sx: { width: 50, height: 50, color: "#AE00FF" },
+              sx: { width: 50, height: 50, color: "#aaaaaa" },
               fontSize: "large",
             }),
           }),
@@ -144735,7 +144741,7 @@ function qTt({ myRental: t }) {
               fontWeight: "500",
               fontSize: "20px",
               lineHeight: "23px",
-              color: "#AE00FF",
+              color: "#aaaaaa",
               mb: 1,
               children: t.RigName,
             }),
@@ -144748,7 +144754,7 @@ function qTt({ myRental: t }) {
         fontWeight: "500",
         fontSize: "20px",
         lineHeight: "23px",
-        color: "#AE00FF",
+        color: "#aaaaaa",
         mb: 1,
         children: t.Status.replace("Ready", "Waiting For Rig"),
       }),
@@ -144760,7 +144766,7 @@ function qTt({ myRental: t }) {
             fontWeight: "500",
             fontSize: "20px",
             lineHeight: "23px",
-            color: "#AE00FF",
+            color: "#aaaaaa",
             mb: 1,
             children: "Ip Address: " + t.ipAddress,
           }),
@@ -144770,7 +144776,7 @@ function qTt({ myRental: t }) {
             fontWeight: "500",
             fontSize: "20px",
             lineHeight: "23px",
-            color: "#AE00FF",
+            color: "#aaaaaa",
             mb: 1,
             children: "Port: " + t.port,
           }),
@@ -144780,7 +144786,7 @@ function qTt({ myRental: t }) {
             fontWeight: "500",
             fontSize: "20px",
             lineHeight: "23px",
-            color: "#AE00FF",
+            color: "#aaaaaa",
             mb: 1,
             children: "Second Port: " + t.secondPort,
           }),
@@ -144832,7 +144838,7 @@ function qTt({ myRental: t }) {
                 fontWeight: "500",
                 fontSize: "26px",
                 lineHeight: "23px",
-                color: "#AE00FF",
+                color: "#aaaaaa",
                 mb: 2,
                 children: "Extend Rent",
               }),
@@ -144892,7 +144898,7 @@ function qTt({ myRental: t }) {
                   borderRadius: "16px",
                   height: "52px",
                   background:
-                    "conic-gradient(from 90deg at 94.99% -7.29%, #D297ED 0deg, #9511FF 119.47deg, #D297ED 236.75deg, #9511FF 360deg), linear-gradient(90deg, #D297ED 0%, #9511FF 99.48%, #D297ED 197.13%, #9511FF 299.76%)",
+                    "conic-gradient(from 90deg at 94.99% -7.29%, #bbbbbb 0deg, #999999 119.47deg, #bbbbbb 236.75deg, #999999 360deg), linear-gradient(90deg, #bbbbbb 0%, #999999 99.48%, #bbbbbb 197.13%, #999999 299.76%)",
                   "&:hover": { border: "1px solid #FFFFFF" },
                 },
                 children: "Pay",
@@ -144992,7 +144998,7 @@ function QTt({ viewType: t, setViewType: e }) {
             sx: {
               background:
                 t === "MYLENDING"
-                  ? "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)"
+                  ? "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)"
                   : "transparent",
               boxShadow: "0px 0px 0px #C059EF",
               fontFamily: "Orbitron",
@@ -145011,7 +145017,7 @@ function QTt({ viewType: t, setViewType: e }) {
             sx: {
               background:
                 t === "ADDRIG"
-                  ? "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)"
+                  ? "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)"
                   : "transparent",
               boxShadow: "0px 0px 0px #C059EF",
               fontFamily: "Orbitron",
@@ -145056,7 +145062,7 @@ function XTt({ myLending: t }) {
               fontWeight: "500",
               fontSize: "20px",
               lineHeight: "23px",
-              color: "#AE00FF",
+              color: "#aaaaaa",
               mb: 1,
               children: t.rigName,
             }),
@@ -145141,7 +145147,7 @@ function ekt({ myLending: t, amountToClaim: e }) {
               color: "#000000",
               borderRadius: "16px",
               background:
-                "conic-gradient(from 90deg at 94.99% -7.29%, #D297ED 0deg, #9511FF 119.47deg, #D297ED 236.75deg, #9511FF 360deg), linear-gradient(90deg, #D297ED 0%, #9511FF 99.48%, #D297ED 197.13%, #9511FF 299.76%)",
+                "conic-gradient(from 90deg at 94.99% -7.29%, #bbbbbb 0deg, #999999 119.47deg, #bbbbbb 236.75deg, #999999 360deg), linear-gradient(90deg, #bbbbbb 0%, #999999 99.48%, #bbbbbb 197.13%, #999999 299.76%)",
               "&:hover": { border: "1px solid #FFFFFF" },
             },
             children: "Claim",
@@ -145428,7 +145434,7 @@ function skt({
                 borderRadius: "16px",
                 height: "52px",
                 background:
-                  "conic-gradient(from 90deg at 94.99% -7.29%, #D297ED 0deg, #9511FF 119.47deg, #D297ED 236.75deg, #9511FF 360deg), linear-gradient(90deg, #D297ED 0%, #9511FF 99.48%, #D297ED 197.13%, #9511FF 299.76%)",
+                  "conic-gradient(from 90deg at 94.99% -7.29%, #bbbbbb 0deg, #999999 119.47deg, #bbbbbb 236.75deg, #999999 360deg), linear-gradient(90deg, #bbbbbb 0%, #999999 99.48%, #bbbbbb 197.13%, #999999 299.76%)",
                 "&:hover": { border: "1px solid #FFFFFF" },
               },
               children: "Next",
@@ -145527,7 +145533,7 @@ function okt({ setActiveStep: t, setupInformation: e, setAddRigResponse: n }) {
             fontWeight: "500",
             fontSize: "20px",
             lineHeight: "23px",
-            color: "#AE00FF",
+            color: "#aaaaaa",
             mb: 1,
             children: e.rigName,
           }),
@@ -145607,7 +145613,7 @@ function okt({ setActiveStep: t, setupInformation: e, setAddRigResponse: n }) {
                   borderRadius: "16px",
                   height: "52px",
                   background:
-                    "conic-gradient(from 90deg at 94.99% -7.29%, #D297ED 0deg, #9511FF 119.47deg, #D297ED 236.75deg, #9511FF 360deg), linear-gradient(90deg, #D297ED 0%, #9511FF 99.48%, #D297ED 197.13%, #9511FF 299.76%)",
+                    "conic-gradient(from 90deg at 94.99% -7.29%, #bbbbbb 0deg, #999999 119.47deg, #bbbbbb 236.75deg, #999999 360deg), linear-gradient(90deg, #bbbbbb 0%, #999999 99.48%, #bbbbbb 197.13%, #999999 299.76%)",
                   "&:hover": { border: "1px solid #FFFFFF" },
                 },
                 children: "List",
@@ -145658,7 +145664,7 @@ function akt({ setActiveStep: t, setupInformation: e, addRigResponse: n }) {
             fontWeight: "500",
             fontSize: "20px",
             lineHeight: "23px",
-            color: "#AE00FF",
+            color: "#aaaaaa",
             mb: 1,
             children: e.gpuType,
           }),
@@ -145719,7 +145725,7 @@ function akt({ setActiveStep: t, setupInformation: e, addRigResponse: n }) {
                 borderRadius: "16px",
                 height: "52px",
                 background:
-                  "conic-gradient(from 90deg at 94.99% -7.29%, #D297ED 0deg, #9511FF 119.47deg, #D297ED 236.75deg, #9511FF 360deg), linear-gradient(90deg, #D297ED 0%, #9511FF 99.48%, #D297ED 197.13%, #9511FF 299.76%)",
+                  "conic-gradient(from 90deg at 94.99% -7.29%, #bbbbbb 0deg, #999999 119.47deg, #bbbbbb 236.75deg, #999999 360deg), linear-gradient(90deg, #bbbbbb 0%, #999999 99.48%, #bbbbbb 197.13%, #999999 299.76%)",
                 "&:hover": { border: "1px solid #FFFFFF" },
               },
               children: "Complete",
@@ -146099,7 +146105,7 @@ function hkt() {
                 children: S.jsx(_e, {
                   height: "37.43px",
                   width: "2px",
-                  sx: { backgroundColor: n === 110 ? "#FF0B0B" : "#950BFF" },
+                  sx: { backgroundColor: n === 110 ? "#FF0B0B" : "#aaaaaa" },
                 }),
               },
               n
@@ -146232,10 +146238,10 @@ function gkt() {
           children: [
             S.jsx(xJ, {
               sx: {
-                borderTop: t !== "rigs" ? null : "1px solid #D297ED",
-                borderBottom: t !== "rigs" ? "1px solid #D297ED" : null,
-                borderLeft: t !== "rigs" ? null : "1px solid #D297ED",
-                borderRight: t !== "rigs" ? null : "1px solid #D297ED",
+                borderTop: t !== "rigs" ? null : "1px solid #bbbbbb",
+                borderBottom: t !== "rigs" ? "1px solid #bbbbbb" : null,
+                borderLeft: t !== "rigs" ? null : "1px solid #bbbbbb",
+                borderRight: t !== "rigs" ? null : "1px solid #bbbbbb",
                 borderTopLeftRadius: "10px",
                 borderTopRightRadius: "10px",
                 background: t !== "rigs" ? "rgba(210, 151, 237, 0.2)" : null,
@@ -146252,10 +146258,10 @@ function gkt() {
             S.jsx(xJ, {
               disabled: !0,
               sx: {
-                borderTop: t === "rigs" ? null : "1px solid #D297ED",
-                borderBottom: t === "rigs" ? "1px solid #D297ED" : null,
-                borderLeft: t === "rigs" ? null : "1px solid #D297ED",
-                borderRight: t === "rigs" ? null : "1px solid #D297ED",
+                borderTop: t === "rigs" ? null : "1px solid #bbbbbb",
+                borderBottom: t === "rigs" ? "1px solid #bbbbbb" : null,
+                borderLeft: t === "rigs" ? null : "1px solid #bbbbbb",
+                borderRight: t === "rigs" ? null : "1px solid #bbbbbb",
                 borderTopLeftRadius: "10px",
                 borderTopRightRadius: "10px",
                 background: t === "rigs" ? "rgba(210, 151, 237, 0.2)" : null,
@@ -146278,7 +146284,7 @@ function gkt() {
           borderRight: "1px solid",
           borderBottom: "1px solid",
           padding: 2,
-          borderColor: "#D297ED",
+          borderColor: "#bbbbbb",
           borderBottomLeftRadius: "10px",
           borderBottomRightRadius: "10px",
           minHeight: "70vh",
@@ -146444,7 +146450,7 @@ function vkt({ chartType: t, setChartType: e }) {
             sx: {
               background:
                 t === "PRICE"
-                  ? "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)"
+                  ? "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)"
                   : "transparent",
               boxShadow: "0px 0px 0px #C059EF",
               fontFamily: "Orbitron",
@@ -146463,7 +146469,7 @@ function vkt({ chartType: t, setChartType: e }) {
             sx: {
               background:
                 t === "MARKETCAP"
-                  ? "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)"
+                  ? "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)"
                   : "transparent",
               boxShadow: "0px 0px 0px #C059EF",
               fontFamily: "Orbitron",
@@ -146516,7 +146522,7 @@ function bkt({ selectedItem: t, setSelectedItem: e }) {
             sx: {
               background:
                 t === "24H"
-                  ? "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)"
+                  ? "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)"
                   : "transparent",
               boxShadow: "0px 0px 0px #C059EF",
               fontFamily: "Orbitron",
@@ -146539,7 +146545,7 @@ function bkt({ selectedItem: t, setSelectedItem: e }) {
             sx: {
               background:
                 t === "1W"
-                  ? "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)"
+                  ? "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)"
                   : "transparent",
               boxShadow: "0px 0px 0px #C059EF",
               fontFamily: "Orbitron",
@@ -146562,7 +146568,7 @@ function bkt({ selectedItem: t, setSelectedItem: e }) {
             sx: {
               background:
                 t === "1M"
-                  ? "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)"
+                  ? "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)"
                   : "transparent",
               boxShadow: "0px 0px 0px #C059EF",
               fontFamily: "Orbitron",
@@ -146585,7 +146591,7 @@ function bkt({ selectedItem: t, setSelectedItem: e }) {
             sx: {
               background:
                 t === "1Y"
-                  ? "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)"
+                  ? "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)"
                   : "transparent",
               boxShadow: "0px 0px 0px #C059EF",
               fontFamily: "Orbitron",
@@ -146608,7 +146614,7 @@ function bkt({ selectedItem: t, setSelectedItem: e }) {
             sx: {
               background:
                 t === "ALL"
-                  ? "radial-gradient(50% 50% at 50% 50%, #D297ED 0%, #9511FF 100%)"
+                  ? "radial-gradient(50% 50% at 50% 50%, #bbbbbb 0%, #999999 100%)"
                   : "transparent",
               boxShadow: "0px 0px 0px #C059EF",
               fontFamily: "Orbitron",
@@ -146742,7 +146748,7 @@ function xkt({ chartData: t, timeFrameFilter: e, chartTypeFilter: n }) {
               id: "myGradient",
               gradientTransform: "rotate(90)",
               children: [
-                S.jsx("stop", { offset: "0%", stopColor: "#D297ED" }),
+                S.jsx("stop", { offset: "0%", stopColor: "#bbbbbb" }),
                 S.jsx("stop", {
                   offset: "100%",
                   stopColor: "rgba(148, 15, 255, 0)",
@@ -146802,7 +146808,7 @@ function LG({ content: t, smallLabel: e = null }) {
             width: "70%",
             height: "100%",
             background:
-              "linear-gradient(126.97deg, #AE00FF 28.26%, #680099 91.2%)",
+              "linear-gradient(126.97deg, #aaaaaa 28.26%, #999999 91.2%)",
             opacity: 0.5,
             borderRadius: "16px",
           },
@@ -147205,7 +147211,7 @@ function $kt() {
             fontWeight: "500",
             fontSize: "35px",
             lineHeight: "44px",
-            color: "#AE00FF",
+            color: "#aaaaaa",
             textAlign: "left",
             children: n ? u(n.market_cap, "M") : "$0.00",
           }),
