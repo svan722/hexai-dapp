@@ -111184,7 +111184,7 @@ function MW() {
             "&:hover": { backgroundColor: Yw("#ffffff", 0.2) },
           },
           onClick: () => {
-            window.open("https://t.me/Hexai_cc", "_blank");
+            window.open("https://t.me/Hexai_bnb", "_blank");
           },
           size: "large",
           children: S.jsx(kyt, {}),
@@ -111195,7 +111195,7 @@ function MW() {
             "&:hover": { backgroundColor: Yw("#ffffff", 0.2) },
           },
           onClick: () => {
-            window.open("https://x.com/Hexai_cc", "_blank");
+            window.open("https://x.com/Hexai_bnb", "_blank");
           },
           size: "large",
           children: S.jsx(Pyt, {}),
